@@ -4,7 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 
 export default function RouteWrapper({
   component: Component,
-  isPrivate,
+  isPrivate = false,
   ...rest
 }) {
   const signed = false;
@@ -22,7 +22,7 @@ export default function RouteWrapper({
 
 RouteWrapper.propTypes = {
   isPrivate: PropTypes.bool,
-  component: PropTypes.oneoOfType([PropTypes.element, PropTypes.func])
+  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
     .isRequired,
 };
 
