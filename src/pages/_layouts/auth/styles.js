@@ -40,16 +40,6 @@ export const Content = styled.div`
     }
 
     button {
-      margin: 5px 0 0;
-      height: 44px;
-      background: #3b9eff;
-      font-weight: bold;
-      color: #fff;
-      border: 0;
-      border-radius: 4px;
-      font-size: 16px;
-      transition: background 0.2s;
-      border-bottom: 5px solid darkslateblue;
       &:hover {
         background: ${darken(0.03, '#3b9eff')};
       }
