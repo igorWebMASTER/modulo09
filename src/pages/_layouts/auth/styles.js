@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   height: 100%;
   background: linear-gradient(-90deg, #7159c1, #ab59c1);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -50,9 +49,13 @@ export const Content = styled.div`
       border-radius: 4px;
       font-size: 16px;
       transition: background 0.2s;
-
+      border-bottom: 5px solid darkslateblue;
       &:hover {
         background: ${darken(0.03, '#3b9eff')};
+      }
+
+      &:focus {
+        border: 0;
       }
     }
 
